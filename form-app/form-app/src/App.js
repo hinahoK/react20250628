@@ -1,24 +1,26 @@
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
 
 function App() {
-  const [inputText,setInputText] = useState("");
-  const [log,setLog] = useState("");
-
-  useEffect(()=>{
-    setLog(`入力内容が更新されました：${inputText}`);
-  },[inputText]);
+  const [inputText, setInputText] = useState("");
 
   return (
     <div>
       <h1>フォームアプリ</h1>
-      <input
-        type="text"
-        placeholder="入力してください"
-        value={inputText}
-        onChange={(e)=>setInputText(e.target.value)}
-      />
-      <p>表示：{inputText}</p>
-      <p>{log}</p>
+
+      {/* フォーム部分 */}
+      <div>
+        <input
+          type="text"
+          placeholder="入力してください"
+          value={inputText}
+          onChange={(e) => setInputText(e.target.value)}
+        />
+      </div>
+
+      {/* 表示部分 */}
+      <div>
+        <p>表示: {inputText}</p>
+      </div>
     </div>
   );
 }
