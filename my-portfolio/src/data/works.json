@@ -1,0 +1,12 @@
+[
+  {
+    "title": "マリモキャッチゲーム",
+    "description": "マリモを集めるUnity製のシンプルなキャッチゲーム",
+    "image": "/images/marimo.png"
+  },
+  {
+    "title": "ケセラン脱出劇",
+    "description": "不思議な毛玉生命体ケセランパサランが脱出を試みるパズル",
+    "image": "/images/keseran.png"
+  }
+]
